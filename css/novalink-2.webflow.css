@@ -672,10 +672,14 @@
 
 .button-text.solid {
   color: #000;
+  font-family: DM Sans, sans-serif;
+  font-weight: 600;
 }
 
 .button-text.outline {
   color: #00d1ff;
+  font-family: DM Sans, sans-serif;
+  font-weight: 600;
 }
 
 .content-4 {
@@ -1151,6 +1155,7 @@
 .nav-elem {
   color: #f7f7f7;
   letter-spacing: 1px;
+  font-family: DM Sans, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 150%;
@@ -1159,6 +1164,7 @@
 .nav-elem.nav-contact {
   color: #000;
   letter-spacing: 3px;
+  font-family: DM Sans, sans-serif;
   font-size: 12px;
   font-weight: 600;
 }
@@ -1464,7 +1470,7 @@
   letter-spacing: .2em;
   margin-bottom: 0;
   font-family: DM Sans, sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
 }
 
@@ -1598,14 +1604,14 @@
 
 .section-7 {
   width: 100%;
-  height: 90vh;
+  height: 100%;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   padding-top: 100px;
-  padding-bottom: 0;
+  padding-bottom: 100px;
   display: flex;
 }
 
@@ -2278,7 +2284,9 @@
   }
 
   .section-7 {
-    height: 60vh;
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 100px;
   }
 
   .textarea-2 {

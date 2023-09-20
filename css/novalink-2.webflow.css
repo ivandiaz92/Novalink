@@ -76,14 +76,26 @@
 .boton-outliune {
   grid-column-gap: 10px;
   grid-row-gap: 10px;
+  background-image: url('../images/circulo-derecha.svg');
+  background-position: 50% 140%;
+  background-size: 140% 390px;
   border: 1px solid #00d1ff;
   border-radius: 80px;
+  flex-wrap: wrap;
   flex: 0 auto;
   justify-content: center;
   align-items: center;
   padding: 15px 50px;
   text-decoration: none;
+  transition: background-position .35s;
   display: flex;
+}
+
+.boton-outliune:hover {
+  color: #313131;
+  background-color: rgba(0, 209, 255, 0);
+  background-position: 50%;
+  font-size: 12px;
 }
 
 .container-6 {
@@ -164,6 +176,9 @@
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   background-color: #272b2b;
+  background-image: url('../images/degradado-azul_1.svg');
+  background-position: 50% 90%;
+  background-size: 380px;
   border: 1px #212121;
   border-radius: 60px;
   justify-content: center;
@@ -171,7 +186,12 @@
   align-items: center;
   padding: 16px 24px;
   text-decoration: none;
+  transition: background-position .35s;
   display: flex;
+}
+
+.pricing-btn:hover {
+  background-position: 50% 170%;
 }
 
 .planes-grid-container {
@@ -398,6 +418,7 @@
 
 .quick-stack-contact {
   height: 90%;
+  max-height: none;
   grid-column-gap: 50px;
   grid-row-gap: 20px;
   align-self: center;
@@ -696,13 +717,25 @@
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   background-color: #00d1ff;
+  background-image: url('../images/circulo-azul.svg');
+  background-position: 50% 140%;
+  background-size: 100%;
   border-radius: 80px;
   flex: 0 auto;
   justify-content: center;
   align-items: center;
   padding: 15px 50px;
   text-decoration: none;
+  transition: background-position .35s;
   display: flex;
+}
+
+.boton-s-lido:hover {
+  background-color: #00d1ff;
+  background-position: 50%;
+  background-size: 140%;
+  border: 1px #00d1ff;
+  flex-wrap: wrap;
 }
 
 .small-container {
@@ -977,12 +1010,23 @@
   grid-row-gap: 8px;
   -webkit-text-stroke-color: #00d1ff;
   background-color: #00d1ff;
+  background-image: url('../images/circulo-azul_1.svg');
+  background-position: 50% 90%;
+  background-size: 200%;
   border-radius: 90px;
   flex: 0 auto;
   justify-content: center;
   align-items: center;
   padding: 12px 30px;
+  transition: background-position .35s;
   display: flex;
+}
+
+.navbar-button:hover {
+  background-color: #00d1ff;
+  background-image: url('../images/circulo-azul_1.svg');
+  background-position: 50%;
+  background-size: 200%;
 }
 
 .feature-item {
@@ -1159,6 +1203,11 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 150%;
+  transition: color .35s;
+}
+
+.nav-elem:hover {
+  color: #05d0ff;
 }
 
 .nav-elem.nav-contact {
@@ -1745,6 +1794,9 @@
 }
 
 .section-9.forma-de-contacto {
+  width: auto;
+  height: auto;
+  max-height: none;
   background-color: #003bd3;
   margin-top: 50px;
 }
@@ -1884,6 +1936,12 @@
   overflow: hidden;
 }
 
+.html-embed {
+  max-height: 532px;
+  min-height: 0;
+  position: relative;
+}
+
 @media screen and (min-width: 1440px) {
   .button-form {
     letter-spacing: 3px;
@@ -1895,6 +1953,10 @@
     padding-left: 60px;
     padding-right: 60px;
     text-decoration: none;
+  }
+
+  .boton-outliune:hover {
+    font-size: 14px;
   }
 
   .planes-grid-container {

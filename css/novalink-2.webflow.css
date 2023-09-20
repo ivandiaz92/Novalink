@@ -2988,6 +2988,11 @@
   .image-25 {
     left: 0;
   }
+
+  .hamburguesa {
+    width: 25px;
+    overflow: hidden;
+  }
 }
 
 #w-node-ba58fa71-4c32-2367-fd73-c1203d0b5d8e-a6c22612, #w-node-ba58fa71-4c32-2367-fd73-c1203d0b5d90-a6c22612, #w-node-ba58fa71-4c32-2367-fd73-c1203d0b5d92-a6c22612, #w-node-ba58fa71-4c32-2367-fd73-c1203d0b5d94-a6c22612 {

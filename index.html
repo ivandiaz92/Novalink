@@ -455,24 +455,55 @@
           <div id="w-node-ba58fa71-4c32-2367-fd73-c1203d0b5e7a-a6c22612" class="w-layout-cell cell-3">
             <div class="html-embed w-embed">
               <div>
-                <form class="nova-form" action="ajax-contact-form.php" method="post">
+                <form class="nova-form">
                   <div>
                     <div>
-                      <input type="service" name="name" class="form-name" placeholder="Name">
+                      <input type="service" id="name" name="name" class="form-name" placeholder="Name">
                     </div>
                     <div class="contact-div">
                       <input type="tel" name="tel" class="form-contact form-input" placeholder="Teléfono">
-                      <input type="email" name="email" class="form-contact form-input" placeholder="Correo">
+                      <input type="email" id="email" name="email" class="form-contact form-input" placeholder="Correo">
                     </div>
                     <div>
-                      <textarea name="message" class="form-text-area form-input" placeholder="Comentarios adicionales"></textarea>
+                      <textarea id="message" name="message" class="form-text-area form-input" placeholder="Comentarios adicionales"></textarea>
                     </div>
                     <div class="nova-btn-position">
-                      <button class="nova-btn">Enviar</button>
+                      <button id="nova-submit" class="nova-btn">Enviar</button>
                     </div>
                   </div>
                 </form>
               </div>
+
+<script>
+    document.getElementById("nova-submit").addEventListener("click", function (event) {
+        event.preventDefault();
+
+        let name = document.getElementById('name').value;
+        let email = document.getElementById('email').value;
+        let message = document.getElementById('message').value;
+
+        var raw = JSON.stringify({
+            "name": name,
+            "message": message,
+            "email": email
+        });
+
+        var myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+
+        var requestOptions = {
+            method: 'POST',
+            headers: myHeaders,
+            body: raw,
+            redirect: 'follow'
+        };
+
+        fetch("<FUNC_URL>", requestOptions)
+            .then(response => response.text())
+            .then(result => console.log(result))
+            .catch(error => console.log('error', error))
+    });
+</script>              
               <style>
 	.nova-btn-position {
     display: flex;

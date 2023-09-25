@@ -1,6 +1,4 @@
 <?php
-// Check if the form is submitted
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get the form data
     $name = $_POST['name'];
     $email = $_POST['email'];
@@ -31,8 +29,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "Oops! Something went wrong. Please try again later.";
     }
-} else {
-    // Handle the case when the form is not submitted
-    echo "Form submission error.";
-}
 ?>

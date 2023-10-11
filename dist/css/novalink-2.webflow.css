@@ -247,7 +247,8 @@
   width: 100%;
   grid-column-gap: 8px;
   grid-row-gap: 8px;
-  justify-content: flex-start;
+  text-align: center;
+  justify-content: center;
   align-items: flex-end;
   padding-bottom: 5px;
   display: flex;
@@ -1245,9 +1246,10 @@
   width: 100%;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  flex-direction: column;
+  text-align: center;
+  flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding-bottom: 5px;
   display: flex;
 }
@@ -1936,6 +1938,7 @@
 }
 
 .heading-plans.clipped {
+  text-align: center;
   background-image: linear-gradient(-30deg, #00acff, #dadada 53%, #0763e4);
   flex: 0 auto;
   font-family: DM Sans, sans-serif;
@@ -2425,7 +2428,8 @@
 
 .descripcion-planes {
   color: #fff;
-  margin-top: 0;
+  text-align: center;
+  margin-top: 5px;
   font-family: DM Sans, sans-serif;
   font-size: 14px;
   line-height: 21px;
